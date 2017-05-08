@@ -21,11 +21,11 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"ht:i:d:o:a:c:",["ifile=","logfile=","dfile=","adapter=","cfile="])
     except getopt.GetoptError:
-        print 'Sintax: dbloader.py -a <adapter> -t <tablename> [-c <columnfile> -i <inputfile> -d <datafile> -o <logfile>]'
+        print 'Sintax: csv2db.py -a <adapter> -t <tablename> [-c <columnfile> -i <inputfile> -d <datafile> -o <logfile>]'
     
     for opt, arg in opts:
         if opt == '-h':
-            print 'Sintax: dbloader.py -a <adapter> -t <tablename> [-c <columnfile> -i <inputfile> -d <datafile> -o <logfile>]'
+            print 'Sintax: csv2db.py -a <adapter> -t <tablename> [-c <columnfile> -i <inputfile> -d <datafile> -o <logfile>]'
             print ''
             print '<adapter> (required) Type of Adapter, can be "ORACLE" or "MYSQL"'
             #print 'Tipo de Adaptador, puede ser "ORACLE" o "MYSQL"'
