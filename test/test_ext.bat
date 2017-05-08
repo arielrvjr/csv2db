@@ -1,1 +1,1 @@
-python ./../src/dbloader.py -a MYSQL -t test_ext
+python ./../src/csv2db.py -a MYSQL -t test_ext
